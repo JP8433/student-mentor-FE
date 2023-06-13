@@ -6,7 +6,7 @@ export default function AllMentors(){
         getAlldata();
     },[])
     let getAlldata = async()=>{// to get all mentor data
-        await axios.get("http://localhost:7000/users/all-mentors")
+        await axios.get("https://mentor-backend-z4gr.onrender.com/users/all-mentors")
         .then((response)=>{
             console.log(response)
             setData(response.data.user);
